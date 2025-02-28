@@ -34,11 +34,13 @@ class WinMSG(bauiv1lib.party.PartyWindow):
         super().__init__(*args, **kwargs)
         s._btn = bui.buttonwidget(
             parent=s._root_widget,
-            size=(60, 40),
+            size=(150, 60),
             scale=0.7,
-            label='WinMSG',
+            label='Win Message',
             button_type='square',
-            position=(s._width - 62, s._height - 83),
+            position=(s._width - 170, s._height - 50),
+            color=(0.5, 0.5, 0.5),  # Black button color
+            textcolor=(1, 1, 1),  # White text for visibility
             on_activate_call=s._winmsg
         )
 
